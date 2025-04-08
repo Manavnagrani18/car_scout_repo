@@ -1,0 +1,5 @@
+[user]
+	name = manav
+	email = manavnagrani@gmail.com
+[core]
+	editor = \"C:\\Users\\MANAV\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
