@@ -1,0 +1,164 @@
+/* General Page Styling */
+.explore {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-bar,
+.dropdown,
+.price-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar {
+  flex: 1;
+  min-width: 200px;
+}
+
+.dropdown,
+.price-input {
+  min-width: 150px;
+}
+
+.search-bar:focus,
+.dropdown:focus,
+.price-input:focus {
+  border-color: #007bff;
+}
+
+/* Car Listing */
+.carlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Car Card */
+.car-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.02);
+}
+
+/* Image Carousel */
+.slick-slider {
+  max-width: 100%;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Fix for Single Image Layout */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide:only-child {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slick-slide:only-child img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Car Details */
+.card-body {
+  padding: 15px;
+}
+
+.car-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.car-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.car-type {
+  background: #007bff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Button */
+.view-details-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0 0 8px 8px;
+}
+
+.view-details-btn:hover {
+  background: #0056b3;
+}
+.car-type {
+  display: none;
+}
+.slick-slider {
+  max-width: 100%;
+}
+
+.slick-slide img, .car-image {
+  width: 100%;
+  height: 200px; /* Ensure all images have the same height */
+  object-fit: cover; /* Crop images to fit the container */
+  border-radius: 8px;
+  display: block; /* Prevents unwanted spacing */
+}
+
+/* Fix standalone images (when there's no slider) */
+.card-header > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
