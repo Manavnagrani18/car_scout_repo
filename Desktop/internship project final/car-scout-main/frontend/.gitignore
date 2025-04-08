@@ -23,7 +23,7 @@ package.json
 
 # optional cache
 .cache/
-*.log
+
 
 # production
 /build
